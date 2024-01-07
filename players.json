@@ -1,6 +1,6 @@
 [
-  {"games": 8, "goals": 4, "assists": 4, "points": 8, "name": "Luca Franchini"},
   {"games": 8, "goals": 6, "assists": 2, "points": 8, "name": "Yannik Franchini"},
+  {"games": 8, "goals": 4, "assists": 4, "points": 8, "name": "Luca Franchini"},
   {"games": 6, "goals": 1, "assists": 3, "points": 4, "name": "Niels Vetsch"},
   {"games": 2, "goals": 3, "assists": 0, "points": 3, "name": "Jonathan Eschenlohr"},
   {"games": 6, "goals": 2, "assists": 1, "points": 3, "name": "Fabian Spycher"},
