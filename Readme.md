@@ -2,6 +2,8 @@
   <img src="https://filemanager.localcities.ch/resource/1c3eec5c-bea4-4592-9e37-fb50792ee6f3/web_club_logo_v0"/>
 </p>
 
+## https://loki-scorer.github.io/
+
 #### Uses bootstrap-tables: https://bootstrap-table.com 
 change data in *.json file. Table is automatically sorted.
 ##### players

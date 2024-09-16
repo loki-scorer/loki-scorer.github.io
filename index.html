@@ -25,7 +25,7 @@
       <th data-field="games">Games</th>
       <th data-field="goals">G</th>
       <th data-field="assists">A</th>
-      <th data-field="points" data-formatter="<b>%s</b>">P</th>
+      <th data-field="points" data-sortable="true">P</th>
     </tr>
     </thead>
   </table>
@@ -62,7 +62,7 @@
       <th data-field="goals">G</th>
       <th data-field="assists">A</th>
       <th data-field="secondAssists">2. A</th>
-      <th data-field="points" data-formatter="<b>%s</b>">P</th>
+      <th data-field="points" data-sortable="true" data-cell-style="boldFormatter">P</th>
     </tr>
     </thead>
   </table>
@@ -79,6 +79,13 @@
     return '<b>' + index_corrected  + '</b>'
   }
 </script>
-
+<script>
+  function boldFormatter(value, row, index) {
+    return {
+      classes: 'font-weight-bold', 
+      css: { 'font-weight': 'bold' }
+    };
+  }
+</script>
 </body>
 </html>
