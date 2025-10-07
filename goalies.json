@@ -1,5 +1,5 @@
 [
   {"games": 3, "goalsAgainst": 5, "goalsAgainstPerGame": 1.67, "shutouts": 1,  "assists": 1, "name": "Michael Engel"},
-  {"games": 1, "goalsAgainst": 1, "goalsAgainstPerGame": 1, "shutouts": 0, "name": "Fadri Largiadèr"},
-  {"games": 0, "goalsAgainst": 0, "goalsAgainstPerGame": 0, "shutouts": 0, "name": "Renato Crivelli"}
+  {"games": 1, "goalsAgainst": 1, "goalsAgainstPerGame": 1, "shutouts": 0, "assists": 1, "name": "Fadri Largiadèr"},
+  {"games": 0, "goalsAgainst": 0, "goalsAgainstPerGame": 0, "shutouts": 0, "assists": 1, "name": "Renato Crivelli"}
 ]
