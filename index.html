@@ -14,6 +14,7 @@
   <h4>Spieler</h4>
   </br>
   <table
+      id="playersTable"
       data-toggle="table"
       data-search="true"
       data-show-multi-sort="true"
@@ -34,6 +35,7 @@
   <h4>Goalies</h4>
   </br>
   <table
+      id="goaliesTable"
       data-toggle="table"
       data-sort-priority='[{"sortName": "goalsAgainstPerGame","sortOrder":"asc"},{"sortName":"goalsAgainst","sortOrder":"asc"},{"sortName":"games","sortOrder":"asc"}]'
       data-url="goalies.json">
@@ -50,31 +52,30 @@
     </thead>
   </table>
   </br>
-  <!--h4>Lehrer</!--h4>
-  </br>
-  <table--
-      data-toggle="table"
-      data-sort-priority='[{"sortName": "points","sortOrder":"desc"},{"sortName":"goals","sortOrder":"desc"},{"sortName":"secondAssists","sortOrder":"desc"},{"sortName":"games","sortOrder":"asc"}]'
-      data-url="teachers.json">
-    <thead>
-    <tr>
-      <th data-field="_position" data-formatter="positionFormatter">#</th>
-      <th data-field="name">Lehrer</th>
-      <th data-field="games">Games</th>
-      <th data-field="goals">G</th>
-      <th data-field="assists">A</th>
-      <th data-field="secondAssists">2. A</th>
-      <th data-field="points" data-sortable="true" data-cell-style="boldFormatter">P</th>
-    </tr>
-    </thead>
-  </table-->
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  window.$ = window.jQuery;
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 <script src="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.21.1/dist/extensions/mobile/bootstrap-table-mobile.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.21.1/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js"></script>
+
+<script>
+  $(function() {
+    $('#playersTable').bootstrapTable({
+      useCache: false,       // avoids undefined
+      multipleSort: true     // enables multiple sort
+    });
+    $('#goaliesTable').bootstrapTable({
+      useCache: false
+    });
+  });
+</script>
 <script>
   function positionFormatter(value, row, index, field) {
     const index_corrected = index + 1;
